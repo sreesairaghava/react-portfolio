@@ -1,0 +1,50 @@
+@import "./base";
+//Styling for SideBar
+.sideBar {
+  color: $primaryHeading;
+  margin-top: 50px;
+  width: 125px;
+  height: 934px;
+  object-fit: contain;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  background: $whites;
+}
+a {
+  text-decoration: none;
+  color: $icons;
+}
+nav {
+  display: flex;
+  align-items: center;
+  .list {
+    margin-left: 350px;
+    li {
+      color: $primaryTextColor;
+      list-style: none;
+      float: left;
+      width: auto;
+      height: 44px;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+      text-align: left;
+      padding-right: 30px;
+    }
+  }
+}
+.logo {
+  width: 118px;
+  height: 116px;
+  left: 0;
+  top: 0;
+}
+.mainImage {
+  top: 0em;
+}
+.container-main {
+  display: flex;
+}

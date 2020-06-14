@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="123.8" viewBox="0 0 120 123.8">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#0d033c}
+        </style>
+    </defs>
+    <g id="prefix__RC_Logo" data-name="RC Logo" transform="translate(-43 -1010)">
+        <text id="prefix__RC" fill="#0d033c" font-family="Avenir-BlackOblique, Avenir" font-size="85px" font-style="oblique" font-weight="800" transform="translate(43 1095)">
+            <tspan x="0" y="0">RC</tspan>
+        </text>
+        <path id="prefix__Path_1" d="M-126.384 1587.75H-12v4.975h-114.384z" class="prefix__cls-2" data-name="Path 1" transform="translate(175 -476.925)"/>
+        <path id="prefix__Path_2" d="M-126.384 1587.75h103.762v4.975h-103.762z" class="prefix__cls-2" data-name="Path 2" transform="translate(175 -467.925)"/>
+        <path id="prefix__Path_3" d="M-126.384 1587.75h84.619v4.975h-84.619z" class="prefix__cls-2" data-name="Path 3" transform="translate(175 -458.925)"/>
+    </g>
+</svg>

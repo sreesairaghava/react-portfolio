@@ -1,0 +1,17 @@
+//Base Colours (Theme)
+$subHeading: #6b64b1;
+$primaryHeading: #5140e8;
+$whites: #fdfdfd;
+$icons: #1a125a;
+$attractive: #5fb12b;
+$premium: #e8cf43;
+$primaryTextColor: #03131c;
+$highlights: #e87643;
+$greyScale: #606060;
+$importants: #c73662;
+//fonts
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(../fonts/Montserrat-Regular.otf),
+    format("opentype");
+}
