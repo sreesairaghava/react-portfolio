@@ -11,7 +11,7 @@ import {
   faDribbble,
 } from "@fortawesome/free-brands-svg-icons";
 const iconStyle = {
-  marginTop: "65px",
+  marginTop: "35px",
   color: "#1a125a",
 };
 const links = {
@@ -72,7 +72,7 @@ const SideBar = () => {
     <>
       <div className="sideBar">
         {sideNav.map((item, key) => (
-          <div style={iconStyle}>
+          <div style={iconStyle} key={sideNav[key].id}>
             <a
               href={sideNav[key].link}
               target="_blank"
@@ -80,7 +80,7 @@ const SideBar = () => {
             >
               <FontAwesomeIcon
                 icon={sideNav[key].icon}
-                size={"4x"}
+                size={"3x"}
               ></FontAwesomeIcon>
             </a>
           </div>

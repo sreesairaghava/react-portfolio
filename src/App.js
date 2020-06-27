@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.scss";
-import "./components/about/SideBar";
-import About from "./components/about/About";
+import Index from "./components/Index";
 
 function App() {
   return (
     <div className="App">
-      <About></About>
+      <Index></Index>
     </div>
   );
 }

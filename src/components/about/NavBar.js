@@ -3,23 +3,23 @@ import Logo from "../../assets/images/rc-logo.png";
 const navItems = [
   {
     title: "About",
-    link: "",
+    link: "#",
   },
   {
     title: "Skills",
-    link: "",
+    link: "#",
   },
   {
     title: "Why Me?",
-    link: "",
+    link: "#",
   },
   {
     title: "Project",
-    link: "",
+    link: "#",
   },
   {
     title: "Contact",
-    link: "",
+    link: "#",
   },
 ];
 
@@ -29,7 +29,7 @@ const NavBar = () => {
       <img src={Logo} className="logo" alt="social-links" />
       <div className="list">
         {navItems.map((item, key) => (
-          <a href={navItems[key].link}>
+          <a href={navItems[key].link} key={navItems[key].title}>
             <li>{navItems[key].title}</li>
           </a>
         ))}

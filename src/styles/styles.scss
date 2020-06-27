@@ -2,9 +2,9 @@
 //Styling for SideBar
 .sideBar {
   color: $primaryHeading;
-  margin-top: 50px;
-  width: 125px;
-  height: 934px;
+  margin-top: 20px;
+  width: 120px;
+  height: 600px;
   object-fit: contain;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
   background: $whites;
@@ -18,6 +18,7 @@ nav {
   align-items: center;
   .list {
     margin-left: 350px;
+    margin-bottom: 10px;
     li {
       color: $primaryTextColor;
       list-style: none;
@@ -33,6 +34,10 @@ nav {
       letter-spacing: normal;
       text-align: left;
       padding-right: 30px;
+      &:hover {
+        border-bottom: 3px, solid, red;
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -43,8 +48,273 @@ nav {
   top: 0;
 }
 .mainImage {
-  top: 0em;
+  margin-top: 30px;
 }
 .container-main {
   display: flex;
+  img {
+    width: 500px;
+    height: 700px;
+    margin-top: -5%;
+  }
+}
+.intro {
+  width: 100%;
+  margin-top: 100px;
+  margin-left: 50px;
+  .hello {
+    width: auto;
+    height: 58px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: $primaryTextColor;
+  }
+  .name {
+    width: auto;
+    height: 58px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: $primaryHeading;
+  }
+  .title {
+    width: auto;
+    height: 117px;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  .freelance {
+    width: 639px;
+    height: 58px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+    cursor: pointer;
+    span {
+      width: 189px;
+      height: 58px;
+      object-fit: contain;
+      font-family: Montserrat;
+      font-size: 36px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      text-align: left;
+      color: $whites;
+    }
+    width: 300px;
+    height: 72px;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: $highlights;
+  }
+}
+
+// Skills styling
+.skills-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 770px;
+  background-color: #fffefe;
+  span {
+    width: 295px;
+    height: 73px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+}
+.card-container {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 30px;
+}
+.card-style {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  .card-title {
+    width: auto;
+    height: 44px;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: center;
+    color: $primaryTextColor;
+  }
+}
+
+// Styling Hire page with SASS
+.hire-container {
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 1000px;
+  margin: auto;
+  span {
+    width: 291px;
+    height: 73px;
+    margin-top: 200px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+}
+// Styling projects container
+.projects-container {
+  width: 100%;
+  height: 800px;
+  background-color: #f8f8f8;
+  .other-projects {
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 3%;
+    width: 523px;
+    height: 98px;
+    border-radius: 15px;
+    border: none;
+    background-color: $primaryHeading;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: center;
+    color: $whites;
+    span {
+      margin-top: 30px;
+    }
+  }
+  .projects-Cardcontainer {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+  }
+}
+.project-title {
+  width: 295px;
+  height: 73px;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.project-card {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  h5 {
+    width: auto;
+    height: 47px;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+  }
+  p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+  }
+  button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: $icons;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+}
+
+// styling contact container
+.contact-container {
+  width: 100%;
+  height: 800px;
+  background-color: #d8d5d5;
+}
+// footer styling
+.footer-container {
+  width: 100%;
+  height: 300px;
 }
