@@ -1,5 +1,8 @@
 @import "./base";
 //Styling for SideBar
+button {
+  cursor: pointer;
+}
 .sideBar {
   color: $primaryHeading;
   margin-top: 20px;
@@ -218,6 +221,9 @@ nav {
   height: 800px;
   background-color: #f8f8f8;
   .other-projects {
+    text-decoration: none;
+    border: none;
+    outline: none;
     margin: 0 auto;
     cursor: pointer;
     text-decoration: none;
@@ -239,6 +245,9 @@ nav {
     color: $whites;
     span {
       margin-top: 30px;
+    }
+    &:hover {
+      background-color: $attractive;
     }
   }
   .projects-Cardcontainer {
@@ -270,6 +279,7 @@ nav {
   h5 {
     width: auto;
     height: 47px;
+    margin-bottom: 0;
     font-family: Montserrat;
     font-size: 38px;
     font-weight: 500;
@@ -286,6 +296,7 @@ nav {
     font-style: normal;
     line-height: 1.23;
     letter-spacing: normal;
+    margin-bottom: 10%;
   }
   button {
     text-decoration: none;
@@ -304,17 +315,144 @@ nav {
     line-height: 1.22;
     letter-spacing: normal;
     color: #ffffff;
+    &:hover {
+      background-color: $attractive;
+    }
+  }
+  //styling card images for project
+  .projectCard-img {
+    width: inherit;
+    border: none;
+    border-radius: inherit;
+    height: 150px;
   }
 }
 
 // styling contact container
 .contact-container {
   width: 100%;
-  height: 800px;
-  background-color: #d8d5d5;
+  height: 600px;
+  background-color: #f4f4f4;
+  span {
+    width: 249px;
+    height: 73px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  .contact-form {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 900px;
+    height: 400px;
+    border-radius: 35px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    input[type="text"] {
+      width: 90%;
+      padding: 18px;
+      margin: 25px 0 0 0;
+      display: inline-block;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 30%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.24;
+      letter-spacing: normal;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      margin-top: 1%;
+      &:hover {
+        background-color: darken($color: #048e59, $amount: 0.1);
+      }
+    }
+  }
+}
+.subtitle {
+  font-family: Montserrat;
+  color: $primaryHeading;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  margin-top: 1%;
+  margin-bottom: 0;
 }
 // footer styling
 .footer-container {
   width: 100%;
-  height: 300px;
+  color: #606060;
+  height: 250px;
+  background-color: #e2e0e0;
+  img {
+    float: left;
+    top: 1;
+    width: 400px;
+    height: 90px;
+  }
+  span {
+    width: 849px;
+    height: 44px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    float: right;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    a {
+      color: inherit;
+      float: left;
+      padding: 50px;
+      list-style: none;
+      font-family: Montserrat;
+      font-size: 26px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+    }
+  }
+  .footer-final {
+    text-align: center;
+    width: 829px;
+    height: 44px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: justify;
+  }
 }

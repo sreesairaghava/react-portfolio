@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/rc-logo.png";
-const navItems = [
+export const navItems = [
   {
     title: "About",
     link: "#",
