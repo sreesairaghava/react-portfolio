@@ -14,7 +14,7 @@ const Footer = () => {
         ))}
       </div>
       <span className="footer-final">
-        Designed and Developed by Sree Sai Raghava
+        Designed and Developed by Sree Sai Raghava.
       </span>
     </div>
   );
